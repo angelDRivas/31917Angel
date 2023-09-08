@@ -1,0 +1,22 @@
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    
+    font-size: 36px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(0, 35, 130);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2{
+    color: rgb(0, 35, 130);
+}
