@@ -1,6 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+    background-color: #002352; /* Cambio en el color de fondo */
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,15 +8,43 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    color: #fff; /* Texto en blanco */
 }
 
 h1 {
-    color: #333;
     margin-bottom: 20px;
+    animation: cambioColor 4s infinite; /* Animación de cambio de color */
+    -webkit-text-stroke: 0.5px white; /* Borde blanco alrededor del texto, más delgado */
+    font-family: 'Arial', sans-serif; /* Cambio de fuente a Arial */
+}
+
+@keyframes cambioColor {
+    0% { color: #0077cc; }
+    25% { color: #0055a4; }
+    50% { color: #003877; }
+    75% { color: #001e4e; }
+    100% { color: #0077cc; }
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #00599B;
+    color: #fff;
+    border: 2px solid #003963;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00407a;
 }
 
 form {
-    background-color: #fff;
+    background-color: #003275; /* Cambio en el color del formulario */
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
@@ -28,6 +56,7 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
+    color: #fff; /* Texto en blanco */
 }
 
 input {
@@ -35,23 +64,44 @@ input {
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
+    background-color: #00599B; /* Igualando el color de todos los botones */
+    color: #fff; /* Texto en blanco */
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #00407a; /* Cambio en el color de los botones submit */
     color: white;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #00284f;
 }
 
 .mensaje {
     margin-top: 20px;
-    color: #333;
+    color: #fff; /* Texto en blanco */
 }
 
 .error {
     color: #ff0000;
 }
+.user-table {
+    border-collapse: collapse;
+    width: 80%; /* Ajusta el ancho de la tabla según tus preferencias */
+    margin: auto; /* Centra la tabla */
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+.user-table th {
+    background-color: #003963;
+    color: #fff;
+}
+
+
+
