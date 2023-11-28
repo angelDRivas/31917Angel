@@ -1,6 +1,6 @@
 body {
-    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
-    background-color: #002352; /* Cambio en el color de fondo */
+    font-family: 'Courier New', monospace;
+    background-color: #002352;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,14 +8,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: #fff; /* Texto en blanco */
+    color: #fff;
 }
 
 h1 {
     margin-bottom: 20px;
-    animation: cambioColor 4s infinite; /* Animación de cambio de color */
-    -webkit-text-stroke: 0.5px white; /* Borde blanco alrededor del texto, más delgado */
-    font-family: 'Arial', sans-serif; /* Cambio de fuente a Arial */
+    animation: cambioColor 4s infinite;
+    -webkit-text-stroke: 0.5px white;
+    font-family: 'Arial', sans-serif;
 }
 
 @keyframes cambioColor {
@@ -25,6 +25,7 @@ h1 {
     75% { color: #001e4e; }
     100% { color: #0077cc; }
 }
+
 button {
     display: inline-block;
     padding: 10px 20px;
@@ -44,7 +45,7 @@ button:hover {
 }
 
 form {
-    background-color: #003275; /* Cambio en el color del formulario */
+    background-color: #003275;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 8px;
@@ -56,7 +57,7 @@ form {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #fff; /* Texto en blanco */
+    color: #fff;
 }
 
 input {
@@ -64,12 +65,12 @@ input {
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
-    background-color: #00599B; /* Igualando el color de todos los botones */
-    color: #fff; /* Texto en blanco */
+    background-color: #00599B;
+    color: #fff;
 }
 
 input[type="submit"] {
-    background-color: #00407a; /* Cambio en el color de los botones submit */
+    background-color: #00407a;
     color: white;
     cursor: pointer;
 }
@@ -80,22 +81,23 @@ input[type="submit"]:hover {
 
 .mensaje {
     margin-top: 20px;
-    color: #fff; /* Texto en blanco */
+    color: #fff;
 }
 
 .error {
     color: #ff0000;
 }
+
 .user-table {
     border-collapse: collapse;
-    width: 80%; /* Ajusta el ancho de la tabla según tus preferencias */
-    margin: auto; /* Centra la tabla */
+    width: 80%;
+    margin: auto;
 }
 
 .user-table th, .user-table td {
     border: 1px solid #fff;
     padding: 8px;
-    text-align: center; /* Centra el texto en las celdas */
+    text-align: center;
 }
 
 .user-table th {
