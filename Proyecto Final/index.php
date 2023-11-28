@@ -5,23 +5,34 @@
     <title>ProyectoFinal</title>
     <link rel="shortcut icon" href="img/icono.jpeg">
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        .usuario-input img,
+        .contrasena-input img {
+            width: 17px;
+            height: 17px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>REGISTRO DE USUARIOS</h1>
     
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <label for="usuario">Usuario:</label>
-        <input type="text" name="usuario" required>
+        <div class="usuario-input">
+            <img src="img/iconoUsuario.png" alt="Icono Usuario">
+            <input type="text" name="usuario" required>
+        </div>
 
         <label for="contrasena">Contraseña:</label>
-        <input type="password" name="contrasena" required>
+        <div class="contrasena-input">
+            <img src="img/iconoContrasena.png" alt="Icono Contraseña">
+            <input type="password" name="contrasena" required>
+        </div>
 
         <input type="submit" name="registrar" value="Registrar">
-
-        
-        
     </form>
-    <button class = "custom-button"onclick="window.location.href='http://angel319172081.free.nf/Proyecto%20Final/ver_registros.php'">ver registros</button>
+    <button class="custom-button" onclick="window.location.href='http://angel319172081.free.nf/Proyecto%20Final/ver_registros.php'">ver registros</button>
    
     <?php
     include 'conexion.php';
@@ -39,7 +50,6 @@
             echo '<p class="error">Error al registrar usuario: ' . $conn->error . '</p>';
         }
     }
-
 
     $conn->close();
     ?>
